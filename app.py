@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify
 
 app = Flask(__name__)
 
-@app.route('/webhook', methods=['GET', 'POST'])
+@app.route('/', methods=['GET', 'POST'])
 def webhook():
     if request.method == 'GET':
         return "Webhook is live!"
